@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        MessageBinding:
+          destination: MyExchange
+          
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /
+    
+  application:
+    name: stream-publisher
+server:
+  port: 9090
