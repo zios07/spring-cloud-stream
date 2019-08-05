@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class MessageListener {
 
 	@StreamListener(target = Sink.INPUT)
-	public void processCheapMeals(String message) {
+	public void processMessage(String message) {
 		System.out.println("Received message : " + message);
 	}
 
