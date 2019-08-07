@@ -2,7 +2,9 @@ spring:
   cloud:
     stream:
       bindings:
-        MessageBinding:
+        PersonBinding:
+          destination: MyExchange
+        AnimalBinding:
           destination: MyExchange
           
   rabbitmq:
