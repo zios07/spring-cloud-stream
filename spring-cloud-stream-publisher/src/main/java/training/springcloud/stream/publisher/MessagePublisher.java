@@ -5,7 +5,10 @@ import org.springframework.messaging.MessageChannel;
 
 public interface MessagePublisher {
 
-	@Output("MessageBinding")
-	public MessageChannel sendMessage();
+	@Output("PersonBinding")
+	public MessageChannel publishPersonObject();
+
+	@Output("AnimalBinding")
+	public MessageChannel publishAnimalObject();
 
 }
