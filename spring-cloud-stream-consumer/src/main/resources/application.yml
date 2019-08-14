@@ -1,11 +1,4 @@
 spring:
-  cloud:
-    stream:
-      bindings:
-        input:
-          destination: MyExchange
-          group: MyQueue
-  
   rabbitmq:
     host: localhost
     port: 5672

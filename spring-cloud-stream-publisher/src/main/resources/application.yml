@@ -1,12 +1,4 @@
 spring:
-  cloud:
-    stream:
-      bindings:
-        PersonBinding:
-          destination: MyExchange
-        AnimalBinding:
-          destination: MyExchange
-          
   rabbitmq:
     host: localhost
     port: 5672
